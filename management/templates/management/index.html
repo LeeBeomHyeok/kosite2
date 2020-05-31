@@ -37,9 +37,13 @@
                         <td>{{my_stock.num}}</td>
                     {% endif %}
                 {% endfor %}
-            </tr>
+            </tr>   
             {% endfor %}
-            <td><button type="submit" class="btn btn-primary">확 인</button></td>
+            <td>
+            <button type="submit" class="btn btn-primary">확 인</button>
+            <a href="/confirmstock"class="btn btn-primary">오너 확인</a>
+            <a href="{% url 'chairmans' %}"class="btn btn-primary"> 역대 회장 용안 </a>
+            </td>
         </form>
         <tbody>
     </table>

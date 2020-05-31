@@ -33,3 +33,10 @@ def index(request):
 
     context = {'stocks':stocks, 'my_stocks' : my_stocks}
     return render(request, 'management/index.html', context)
+
+
+def confirmstock(request):
+    return redirect(request, 'confirmstock')
+
+def chairmans(request):
+    return render(request, 'management/chairman.html')
